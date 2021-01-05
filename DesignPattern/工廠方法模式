@@ -1,1 +1,36 @@
+# 工廠方法模式 (Factory Method Pattern)
+------
+定義 : 工廠方法模式定義了一個建立物件的介面，但由子類決定要實例化的類別。
 
+> 1. 先做一個工廠的介面
+> 2. 實作介面回傳子類
+
+> 分離了物件的使用和創造
+
+
+example : 糖果工廠
+
+```java
+/**糖果物件
+*class Candy{}
+*class SweetCandy extends Candy{}  
+*class SaltyCandy extends Candy{}
+*/
+
+interface CandyFactory{  //1.先做一個工廠的介面
+  abstract Candy CreateCandy();
+}
+class SweetCandyFactory implements CandyFactory{  //2.實作介面回傳子類
+    Candy CreateCandy(){
+        return new SweetCandy();
+    }
+}
+class SaltyCandyFactory implements CandyFactory{
+    Candy CreateCandy(){
+        return new SaltyCandy();
+    }
+}
+
+>>分離了物件的使用和創造
+>>工廠創造實例並回傳
+```
