@@ -1,5 +1,5 @@
 ### Standard 
-無論如何新加一個實例
+new 一個實例
 
 ### SingleTop
 若任務棧 " 頂端 " 已有實例，調用onNewIntent復用，可應用在推播啟動上  
