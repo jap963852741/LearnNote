@@ -1,3 +1,5 @@
+# 發生時機
+
 ### static
 當一個變數指定為 static (靜態) 時  
 代表它從程式開始執行時便產生了，而且它的壽命直到程式結束時才終止。  
@@ -11,4 +13,10 @@
 因此當內部類別的實例一直存活時，外部類別的實例也就永遠不會被回收。
 
 
-![image](https://user-images.githubusercontent.com/32256068/111109406-a3396100-8595-11eb-9391-123e413d2dae.png)
+![image](https://user-images.githubusercontent.com/32256068/111109600-05926180-8596-11eb-8283-a294c58a8c93.png)
+
+
+# 解決方法
+需釋放的資源可在 onStop 進行檢查並釋放，注意物件的生命週期與使用情況，  
+而像大圖這種大量使用 Memory 的情況，  
+可以用 LruCache 來控制使用量（Android內存優化）。
