@@ -1,4 +1,4 @@
-# 說明
+# Service
 Service 不能做長時間的事情，需要在另一個 Thread 去操作。  
 
 ## IntentService繼承自Service類的
