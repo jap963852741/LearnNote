@@ -1,3 +1,5 @@
+* Kotlin 也是一種靜態語言，他會編譯成 byte code 然後在 jvm 上面運行  
+
 # Null Safety
 
 Safe Calls（?） 與 Not-null Assertion（ !! ）  
