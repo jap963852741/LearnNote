@@ -22,4 +22,4 @@
   }
 
 
-## [Lock]() 
+## [Lock](https://github.com/jap963852741/LearnNote/blob/main/android/Thread%20Lock.md) 
