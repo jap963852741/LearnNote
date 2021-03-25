@@ -8,11 +8,11 @@ Android中表示应用程序无响应
 
 # 類型
 * KeyDispatchTimeout（常见）: input事件在5S内没有处理完成发生了ANR
-* BroadcastTimeout : 
-1. 前台Broadcast：onReceiver在10S内没有处理完成发生ANR
-2. 后台Broadcast：onReceiver在60s内没有处理完成发生ANR
+* [BroadcastTimeout](https://github.com/jap963852741/LearnNote/blob/main/android/Android%20%E5%9B%9B%E5%A4%A7%E7%B5%84%E4%BB%B6.md) : 
+    1. 前台Broadcast：onReceiver在10S内没有处理完成发生ANR
+    2. 后台Broadcast：onReceiver在60s内没有处理完成发生ANR
 * ServiceTimeout : 
-1. 前台Service：onCreate，onStart，onBind 等生命周期在20s内没有处理完成发生ANR
-2. 后台Service：onCreate，onStart，onBind 等生命周期在200s内没有处理完成发生ANR
+    1. 前台Service：onCreate，onStart，onBind 等生命周期在20s内没有处理完成发生ANR
+    2. 后台Service：onCreate，onStart，onBind 等生命周期在200s内没有处理完成发生ANR
 * ContentProviderTimeout : ContentProvider 在10S内没有处理完成发生ANR
 
